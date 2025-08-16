@@ -5,33 +5,110 @@
     margin: 0;
 }
 
+body {
+    background-color: #fff;
+}
+
+/* Estilos para el navbar */
+.navbar {
+    background-color: #003366;
+    color: #fff;
+}
+
+.nav-link {
+    text-align: center;
+    color: #fff;
+}
+
 /* ==== Inicio y carousel ==== */
 .main-carousel {
     display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center;     /* Centra verticalmente */
+    justify-content: center;
+    align-items: center;
     width: 100%;
     min-height: 400px;
     overflow: hidden;
 }
 
 .carousel {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100%;
+    max-height: 500px; /* Altura máxima para todo el carrusel */
+    overflow: hidden;
 }
 
-.carousel-inner {
+.carousel-item {
+    height: 500px; /* Todas las diapositivas misma altura */
+}
+
+.carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ocupa todo el espacio sin deformarse */
+}
+
+
+.stickers {
+    width: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
-.carousel-item img {
-    width: 50%;               /* Ajusta el tamaño */
-    margin: auto;             /* Centra la imagen dentro del slide */
+.stickers {
+    display: flex;
+    flex-wrap: wrap; /* Permite que bajen en pantallas chicas */
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.stickers h1 {
+    width: 100%; /* Ocupa toda la fila */
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.stick {
+    background: #003366;
     border-radius: 10px;
+    overflow: hidden;
+    width: 300px; /* Tamaño fijo en desktop */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.stick img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.stick button {
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    background: #ffcc00;
+    color: #003366;
+    cursor: pointer;
+    border-radius: 5px;
+    border-radius: 25px;
+}
+
+.stick button:hover {
+    background: #003366;
+    color: #fff;
+    transform: scale(1.05);
+    border-radius: 25px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .stick {
+        width: 100%; /* Ocupa todo el ancho en pantallas chicas */
+    }
 }
 
 
