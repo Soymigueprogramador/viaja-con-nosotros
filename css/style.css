@@ -9,6 +9,11 @@ body {
     background-color: #fff;
 }
 
+h1 {
+    text-align: center;
+    color: #003366;
+}
+
 /* Estilos para el navbar */
 .navbar {
     background-color: #003366;
@@ -152,6 +157,60 @@ body {
     .nosotros img {
         max-width: 100%;
     }
+}
+
+/* Estilos para el formulario de contacto */
+.contacto-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #036;
+    margin: 20px;
+}
+
+.contacto-container h1 {
+    margin-top: 20px;
+}
+
+form {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    gap: 15px;
+}
+
+.campos, textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 2.5px solid #ffcc00;
+    background-color: #fff;
+    box-sizing: border-box;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.btn-dev-contac {
+   display: inline-block;
+    background: #ffcc00;
+    color: #003366;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+    transition: transform 0.2s ease, background 0.3s ease, color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.btn-dev-contac:hover {
+    background: white;
+    color: #003366;
+    transform: scale(1.05);
 }
 
 /* ==== Footer ==== */
