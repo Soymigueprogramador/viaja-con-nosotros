@@ -37,20 +37,19 @@ h1 {
 
 .carousel {
     width: 100%;
-    max-height: 500px; /* Altura máxima para todo el carrusel */
+    max-height: 500px;
     overflow: hidden;
 }
 
 .carousel-item {
-    height: 500px; /* Todas las diapositivas misma altura */
+    height: 500px;
 }
 
 .carousel img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ocupa todo el espacio sin deformarse */
+    object-fit: cover;
 }
-
 
 .stickers {
     width: 100%;
@@ -157,6 +156,28 @@ h1 {
     .nosotros img {
         max-width: 100%;
     }
+}
+
+/* ====== Pagina de viajes ====== */
+.viajes-container {
+    width: 100%;
+    height: auto;
+    margin: 20px;
+    background-color: #036;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-complete {
+    background-color: #ffcc00;
+    color: #000;
+    margin: 20px;
+}
+
+.card-complete:hover {
+    background: white;
+    color: #003366;
 }
 
 /* Estilos para el formulario de contacto */
