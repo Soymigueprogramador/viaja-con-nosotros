@@ -33,3 +33,21 @@ document.getElementById('formularioContacto').addEventListener('submit', (e) => 
     // Mostramos la ventana con el resultado del envío del formulario.
     window.location.href = `mailto:soymigueprogramador@gmail.com?subject=${encodeURIComponent(asunto)}&body=${cuerpoDelMensaje}`;
 });
+
+// service_d52mqej
+
+
+/*
+    // Inicializar EmailJS con tu User ID (lo sacás de la web de EmailJS)
+emailjs.init("TU_USER_ID");
+
+document.getElementById("contactForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  emailjs.sendForm("service_xxx", "template_xxx", this).then(
+    () => alert("✅ Mensaje enviado con éxito!"),
+    (err) => alert("❌ Error: " + JSON.stringify(err))
+  );
+});
+
+*/
